@@ -1,0 +1,43 @@
+body {
+    animation: slider 10s linear infinite;
+  }
+
+  @keyframes slider {
+    0%{
+        background-color: antiquewhite;
+    }
+    30%{
+        background-color:aquamarine;
+     }
+     60%{
+        background-color: beige;
+     }
+     100%{
+        background-color: bisque;
+     }
+  }
+
+  .container{
+    margin: 100px 0 0  200px;
+    width: 70%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .container img {
+    width: 25%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid rgba(255,255,255,0.6);
+    transition: all ease-in-out 0.5s;
+
+
+  }
+
+  .container img:hover {
+    width: 40%;
+
+  }
